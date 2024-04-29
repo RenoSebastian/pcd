@@ -93,6 +93,41 @@ def zoomout():
     return render_template("uploaded.html", file_path="img/img_now.jpg")
 
 
+@app.route("/dilasi", methods=["POST"])
+@nocache
+def dilasi():
+    image_processing.dilasi()
+    return render_template("uploaded.html", file_path="img/img_now.jpg")
+
+
+@app.route("/Opening", methods=["POST"])
+@nocache
+def Opening():
+    image_processing.Opening()
+    return render_template("uploaded.html", file_path="img/img_now.jpg")
+
+
+@app.route("/count", methods=["POST"])
+@nocache
+def count():
+    image_processing.count_white_objects()
+    return render_template("uploaded.html", file_path="img/img_now.jpg")
+
+
+@app.route("/Closing", methods=["POST"])
+@nocache
+def Closing():
+    image_processing.Closing()
+    return render_template("uploaded.html", file_path="img/img_now.jpg")
+
+
+@app.route("/erosi", methods=["POST"])
+@nocache
+def erosi():
+    image_processing.erosi()
+    return render_template("uploaded.html", file_path="img/img_now.jpg")
+
+
 @app.route("/move_left", methods=["POST"])
 @nocache
 def move_left():

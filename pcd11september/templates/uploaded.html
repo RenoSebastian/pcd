@@ -83,7 +83,32 @@
             </form>
           </div>
       </div>
-      <!-- Kolom Pergeseran -->
+      <!-- Kolom Quiz -->
+      <div class="col-md-4 mb-4">
+        <h2>Quiz</h2>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownUmum" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Quiz
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownUmum">
+            <form id="" action="{{ url_for('erosi') }}" method="POST" enctype="multipart/form-data">
+              <button class="dropdown-item" type="submit">erosi</button>
+            </form>
+            <form id="" action="{{ url_for('dilasi') }}" method="POST" enctype="multipart/form-data">
+              <button class="dropdown-item" type="submit">dilasi</button>
+            </form>
+            <form id="" action="{{ url_for('Opening') }}" method="POST" enctype="multipart/form-data">
+              <button class="dropdown-item" type="submit">Opening</button>
+            </form>
+            <form id="" action="{{ url_for('Closing') }}" method="POST" enctype="multipart/form-data">
+              <button class="dropdown-item" type="submit">Closing</button>
+            </form>
+            <form id="" action="{{ url_for('count') }}" method="POST" enctype="multipart/form-data">
+              <button class="dropdown-item" type="submit">Hitung Objek</button>
+            </form>
+          </div>
+        </div>
+        <!-- Kolom Pergeseran -->
       <div class="col-md-4 mb-4">
         <h2>Pergeseran</h2>
         <div class="dropdown">
@@ -222,6 +247,7 @@
       </div>
     </div>
   </div>
+      </div>
   </div>
 <!-- Tampilan Gambar Hasil -->
 <div class="container">
